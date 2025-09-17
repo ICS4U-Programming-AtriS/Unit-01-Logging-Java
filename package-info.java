@@ -1,5 +1,5 @@
 /**
-* package-info file for NameOfProgram.
+* package-info file for Logging.
 *
 * @author  Atri Sarker
 * @version 1.0
