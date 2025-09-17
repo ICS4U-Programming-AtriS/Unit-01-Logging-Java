@@ -3,6 +3,7 @@
 import java.util.InputMismatchException;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.stream.IntStream;
 
 /**
  * Enterprise software for ATREE Logging Company.
@@ -67,7 +68,7 @@ public final class Logging {
       scanner.close();
 
       // Check if the log length is a valid length
-      if (logLength > 0) {
+      if (IntStream.of(LOG_LENGTHS).anyMatch(num -> num == logLength)) {
         // Calculate the amount of logs that can fit in the truck
         final double logAmount = TRUCK_WEIGHT_LIMIT
             / (WEIGHT_PER_METER * logLength);
