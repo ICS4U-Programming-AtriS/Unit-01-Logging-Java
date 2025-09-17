@@ -81,7 +81,7 @@ public final class Logging {
       }
     } catch (InputMismatchException error) {
       // Error message for non-numeric length. [IN RED]
-      System.out.println("\033[0;31mERROR: LOG LENGTH MUST TO NUMERIC");
+      System.out.println("\033[0;31mERROR: LOG LENGTH MUST BE NUMERIC");
     }
   }
 }
